@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li class="active"><a href="../../unknown.html">&lt;unknown&gt;</a>
+            </li>
+
+        
+        <li class="active">&lt;unknown&gt;
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">__udivmoddi4</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00041228</td>
+                <td>
+    
+    
+</td>
+                <td></td>
+                <td>760</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="./985b4898f9e942c80a378b866de7bf13.html">__aeabi_ldivmod (160)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./1c7eb7a1a927e1255dd679ad9135aad5.html">__aeabi_uldivmod (48)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./9f4a87747e512f0d8d3c2b6a4d6da60e.html">operator delete(void*) (4)</a></pre>
+    
+
+    <pre>
+
+    __udivmoddi4():
+
+       41228:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+
+       4122c:	9d08      	ldr	r5, [sp, #32]
+
+       4122e:	460f      	mov	r7, r1
+
+       41230:	4604      	mov	r4, r0
+
+       41232:	468c      	mov	ip, r1
+
+       41234:	2b00      	cmp	r3, #0
+
+       41236:	d148      	bne.n	412ca <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0xa2>
+
+       41238:	428a      	cmp	r2, r1
+
+       4123a:	4616      	mov	r6, r2
+
+       4123c:	d961      	bls.n	41302 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0xda>
+
+       4123e:	fab2 f382 	clz	r3, r2
+
+       41242:	b14b      	cbz	r3, 41258 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x30>
+
+       41244:	f1c3 0220 	rsb	r2, r3, #32
+
+       41248:	fa01 fc03 	lsl.w	ip, r1, r3
+
+       4124c:	fa20 f202 	lsr.w	r2, r0, r2
+
+       41250:	409e      	lsls	r6, r3
+
+       41252:	ea42 0c0c 	orr.w	ip, r2, ip
+
+       41256:	409c      	lsls	r4, r3
+
+       41258:	ea4f 4e16 	mov.w	lr, r6, lsr #16
+
+       4125c:	b2b7      	uxth	r7, r6
+
+       4125e:	fbbc f1fe 	udiv	r1, ip, lr
+
+       41262:	0c22      	lsrs	r2, r4, #16
+
+       41264:	fb0e cc11 	mls	ip, lr, r1, ip
+
+       41268:	ea42 420c 	orr.w	r2, r2, ip, lsl #16
+
+       4126c:	fb01 f007 	mul.w	r0, r1, r7
+
+       41270:	4290      	cmp	r0, r2
+
+       41272:	d909      	bls.n	41288 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x60>
+
+       41274:	18b2      	adds	r2, r6, r2
+
+       41276:	f101 3cff 	add.w	ip, r1, #4294967295	@ 0xffffffff
+
+       4127a:	f080 80ee 	bcs.w	4145a <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x232>
+
+       4127e:	4290      	cmp	r0, r2
+
+       41280:	f240 80eb 	bls.w	4145a <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x232>
+
+       41284:	3902      	subs	r1, #2
+
+       41286:	4432      	add	r2, r6
+
+       41288:	1a12      	subs	r2, r2, r0
+
+       4128a:	b2a4      	uxth	r4, r4
+
+       4128c:	fbb2 f0fe 	udiv	r0, r2, lr
+
+       41290:	fb0e 2210 	mls	r2, lr, r0, r2
+
+       41294:	ea44 4402 	orr.w	r4, r4, r2, lsl #16
+
+       41298:	fb00 f707 	mul.w	r7, r0, r7
+
+       4129c:	42a7      	cmp	r7, r4
+
+       4129e:	d909      	bls.n	412b4 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x8c>
+
+       412a0:	1934      	adds	r4, r6, r4
+
+       412a2:	f100 32ff 	add.w	r2, r0, #4294967295	@ 0xffffffff
+
+       412a6:	f080 80da 	bcs.w	4145e <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x236>
+
+       412aa:	42a7      	cmp	r7, r4
+
+       412ac:	f240 80d7 	bls.w	4145e <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x236>
+
+       412b0:	4434      	add	r4, r6
+
+       412b2:	3802      	subs	r0, #2
+
+       412b4:	ea40 4001 	orr.w	r0, r0, r1, lsl #16
+
+       412b8:	1be4      	subs	r4, r4, r7
+
+       412ba:	2100      	movs	r1, #0
+
+       412bc:	b11d      	cbz	r5, 412c6 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x9e>
+
+       412be:	40dc      	lsrs	r4, r3
+
+       412c0:	2300      	movs	r3, #0
+
+       412c2:	e9c5 4300 	strd	r4, r3, [r5]
+
+       412c6:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+       412ca:	428b      	cmp	r3, r1
+
+       412cc:	d906      	bls.n	412dc <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0xb4>
+
+       412ce:	b10d      	cbz	r5, 412d4 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0xac>
+
+       412d0:	e9c5 0100 	strd	r0, r1, [r5]
+
+       412d4:	2100      	movs	r1, #0
+
+       412d6:	4608      	mov	r0, r1
+
+       412d8:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+       412dc:	fab3 f183 	clz	r1, r3
+
+       412e0:	2900      	cmp	r1, #0
+
+       412e2:	d148      	bne.n	41376 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x14e>
+
+       412e4:	42bb      	cmp	r3, r7
+
+       412e6:	d302      	bcc.n	412ee <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0xc6>
+
+       412e8:	4282      	cmp	r2, r0
+
+       412ea:	f200 8107 	bhi.w	414fc <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2d4>
+
+       412ee:	1a84      	subs	r4, r0, r2
+
+       412f0:	eb67 0203 	sbc.w	r2, r7, r3
+
+       412f4:	2001      	movs	r0, #1
+
+       412f6:	4694      	mov	ip, r2
+
+       412f8:	2d00      	cmp	r5, #0
+
+       412fa:	d0e4      	beq.n	412c6 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x9e>
+
+       412fc:	e9c5 4c00 	strd	r4, ip, [r5]
+
+       41300:	e7e1      	b.n	412c6 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x9e>
+
+       41302:	2a00      	cmp	r2, #0
+
+       41304:	f000 8092 	beq.w	4142c <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x204>
+
+       41308:	fab2 f382 	clz	r3, r2
+
+       4130c:	2b00      	cmp	r3, #0
+
+       4130e:	f040 80a8 	bne.w	41462 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x23a>
+
+       41312:	1a8a      	subs	r2, r1, r2
+
+       41314:	ea4f 4e16 	mov.w	lr, r6, lsr #16
+
+       41318:	fa1f fc86 	uxth.w	ip, r6
+
+       4131c:	2101      	movs	r1, #1
+
+       4131e:	0c20      	lsrs	r0, r4, #16
+
+       41320:	fbb2 f7fe 	udiv	r7, r2, lr
+
+       41324:	fb0e 2217 	mls	r2, lr, r7, r2
+
+       41328:	ea40 4202 	orr.w	r2, r0, r2, lsl #16
+
+       4132c:	fb0c f007 	mul.w	r0, ip, r7
+
+       41330:	4290      	cmp	r0, r2
+
+       41332:	d907      	bls.n	41344 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x11c>
+
+       41334:	18b2      	adds	r2, r6, r2
+
+       41336:	f107 38ff 	add.w	r8, r7, #4294967295	@ 0xffffffff
+
+       4133a:	d202      	bcs.n	41342 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x11a>
+
+       4133c:	4290      	cmp	r0, r2
+
+       4133e:	f200 80e2 	bhi.w	41506 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2de>
+
+       41342:	4647      	mov	r7, r8
+
+       41344:	1a12      	subs	r2, r2, r0
+
+       41346:	b2a4      	uxth	r4, r4
+
+       41348:	fbb2 f0fe 	udiv	r0, r2, lr
+
+       4134c:	fb0e 2210 	mls	r2, lr, r0, r2
+
+       41350:	ea44 4402 	orr.w	r4, r4, r2, lsl #16
+
+       41354:	fb0c fc00 	mul.w	ip, ip, r0
+
+       41358:	45a4      	cmp	ip, r4
+
+       4135a:	d907      	bls.n	4136c <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x144>
+
+       4135c:	1934      	adds	r4, r6, r4
+
+       4135e:	f100 32ff 	add.w	r2, r0, #4294967295	@ 0xffffffff
+
+       41362:	d202      	bcs.n	4136a <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x142>
+
+       41364:	45a4      	cmp	ip, r4
+
+       41366:	f200 80cb 	bhi.w	41500 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2d8>
+
+       4136a:	4610      	mov	r0, r2
+
+       4136c:	eba4 040c 	sub.w	r4, r4, ip
+
+       41370:	ea40 4007 	orr.w	r0, r0, r7, lsl #16
+
+       41374:	e7a2      	b.n	412bc <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x94>
+
+       41376:	f1c1 0620 	rsb	r6, r1, #32
+
+       4137a:	408b      	lsls	r3, r1
+
+       4137c:	fa22 fc06 	lsr.w	ip, r2, r6
+
+       41380:	ea4c 0c03 	orr.w	ip, ip, r3
+
+       41384:	fa07 f401 	lsl.w	r4, r7, r1
+
+       41388:	fa20 f306 	lsr.w	r3, r0, r6
+
+       4138c:	40f7      	lsrs	r7, r6
+
+       4138e:	ea4f 491c 	mov.w	r9, ip, lsr #16
+
+       41392:	4323      	orrs	r3, r4
+
+       41394:	fa00 f801 	lsl.w	r8, r0, r1
+
+       41398:	fa1f fe8c 	uxth.w	lr, ip
+
+       4139c:	fbb7 f0f9 	udiv	r0, r7, r9
+
+       413a0:	0c1c      	lsrs	r4, r3, #16
+
+       413a2:	fb09 7710 	mls	r7, r9, r0, r7
+
+       413a6:	ea44 4407 	orr.w	r4, r4, r7, lsl #16
+
+       413aa:	fb00 f70e 	mul.w	r7, r0, lr
+
+       413ae:	42a7      	cmp	r7, r4
+
+       413b0:	fa02 f201 	lsl.w	r2, r2, r1
+
+       413b4:	d90a      	bls.n	413cc <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x1a4>
+
+       413b6:	eb1c 0404 	adds.w	r4, ip, r4
+
+       413ba:	f100 3aff 	add.w	sl, r0, #4294967295	@ 0xffffffff
+
+       413be:	f080 809b 	bcs.w	414f8 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2d0>
+
+       413c2:	42a7      	cmp	r7, r4
+
+       413c4:	f240 8098 	bls.w	414f8 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2d0>
+
+       413c8:	3802      	subs	r0, #2
+
+       413ca:	4464      	add	r4, ip
+
+       413cc:	1be4      	subs	r4, r4, r7
+
+       413ce:	b29f      	uxth	r7, r3
+
+       413d0:	fbb4 f3f9 	udiv	r3, r4, r9
+
+       413d4:	fb09 4413 	mls	r4, r9, r3, r4
+
+       413d8:	ea47 4404 	orr.w	r4, r7, r4, lsl #16
+
+       413dc:	fb03 fe0e 	mul.w	lr, r3, lr
+
+       413e0:	45a6      	cmp	lr, r4
+
+       413e2:	d909      	bls.n	413f8 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x1d0>
+
+       413e4:	eb1c 0404 	adds.w	r4, ip, r4
+
+       413e8:	f103 37ff 	add.w	r7, r3, #4294967295	@ 0xffffffff
+
+       413ec:	f080 8082 	bcs.w	414f4 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2cc>
+
+       413f0:	45a6      	cmp	lr, r4
+
+       413f2:	d97f      	bls.n	414f4 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2cc>
+
+       413f4:	3b02      	subs	r3, #2
+
+       413f6:	4464      	add	r4, ip
+
+       413f8:	ea43 4000 	orr.w	r0, r3, r0, lsl #16
+
+       413fc:	eba4 040e 	sub.w	r4, r4, lr
+
+       41400:	fba0 e702 	umull	lr, r7, r0, r2
+
+       41404:	42bc      	cmp	r4, r7
+
+       41406:	4673      	mov	r3, lr
+
+       41408:	46b9      	mov	r9, r7
+
+       4140a:	d363      	bcc.n	414d4 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2ac>
+
+       4140c:	d060      	beq.n	414d0 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2a8>
+
+       4140e:	b15d      	cbz	r5, 41428 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x200>
+
+       41410:	ebb8 0203 	subs.w	r2, r8, r3
+
+       41414:	eb64 0409 	sbc.w	r4, r4, r9
+
+       41418:	fa04 f606 	lsl.w	r6, r4, r6
+
+       4141c:	fa22 f301 	lsr.w	r3, r2, r1
+
+       41420:	431e      	orrs	r6, r3
+
+       41422:	40cc      	lsrs	r4, r1
+
+       41424:	e9c5 6400 	strd	r6, r4, [r5]
+
+       41428:	2100      	movs	r1, #0
+
+       4142a:	e74c      	b.n	412c6 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x9e>
+
+       4142c:	0862      	lsrs	r2, r4, #1
+
+       4142e:	0848      	lsrs	r0, r1, #1
+
+       41430:	ea42 71c1 	orr.w	r1, r2, r1, lsl #31
+
+       41434:	0c0b      	lsrs	r3, r1, #16
+
+       41436:	ea43 4300 	orr.w	r3, r3, r0, lsl #16
+
+       4143a:	b28a      	uxth	r2, r1
+
+       4143c:	ea42 4203 	orr.w	r2, r2, r3, lsl #16
+
+       41440:	fbb3 f1f6 	udiv	r1, r3, r6
+
+       41444:	07e4      	lsls	r4, r4, #31
+
+       41446:	46b4      	mov	ip, r6
+
+       41448:	4637      	mov	r7, r6
+
+       4144a:	46b6      	mov	lr, r6
+
+       4144c:	231f      	movs	r3, #31
+
+       4144e:	fbb0 f0f6 	udiv	r0, r0, r6
+
+       41452:	1bd2      	subs	r2, r2, r7
+
+       41454:	ea41 4100 	orr.w	r1, r1, r0, lsl #16
+
+       41458:	e761      	b.n	4131e <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0xf6>
+
+       4145a:	4661      	mov	r1, ip
+
+       4145c:	e714      	b.n	41288 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x60>
+
+       4145e:	4610      	mov	r0, r2
+
+       41460:	e728      	b.n	412b4 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x8c>
+
+       41462:	f1c3 0120 	rsb	r1, r3, #32
+
+       41466:	fa20 f201 	lsr.w	r2, r0, r1
+
+       4146a:	409e      	lsls	r6, r3
+
+       4146c:	fa27 f101 	lsr.w	r1, r7, r1
+
+       41470:	409f      	lsls	r7, r3
+
+       41472:	433a      	orrs	r2, r7
+
+       41474:	ea4f 4e16 	mov.w	lr, r6, lsr #16
+
+       41478:	fa1f fc86 	uxth.w	ip, r6
+
+       4147c:	fbb1 f7fe 	udiv	r7, r1, lr
+
+       41480:	fb0e 1017 	mls	r0, lr, r7, r1
+
+       41484:	0c11      	lsrs	r1, r2, #16
+
+       41486:	ea41 4100 	orr.w	r1, r1, r0, lsl #16
+
+       4148a:	fb07 f80c 	mul.w	r8, r7, ip
+
+       4148e:	4588      	cmp	r8, r1
+
+       41490:	fa04 f403 	lsl.w	r4, r4, r3
+
+       41494:	d93a      	bls.n	4150c <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2e4>
+
+       41496:	1871      	adds	r1, r6, r1
+
+       41498:	f107 30ff 	add.w	r0, r7, #4294967295	@ 0xffffffff
+
+       4149c:	d201      	bcs.n	414a2 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x27a>
+
+       4149e:	4588      	cmp	r8, r1
+
+       414a0:	d81f      	bhi.n	414e2 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2ba>
+
+       414a2:	eba1 0108 	sub.w	r1, r1, r8
+
+       414a6:	fbb1 f8fe 	udiv	r8, r1, lr
+
+       414aa:	fb08 f70c 	mul.w	r7, r8, ip
+
+       414ae:	fb0e 1118 	mls	r1, lr, r8, r1
+
+       414b2:	b292      	uxth	r2, r2
+
+       414b4:	ea42 4201 	orr.w	r2, r2, r1, lsl #16
+
+       414b8:	42ba      	cmp	r2, r7
+
+       414ba:	d22f      	bcs.n	4151c <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x2f4>
+
+       414bc:	18b2      	adds	r2, r6, r2
+
+       414be:	f108 31ff 	add.w	r1, r8, #4294967295	@ 0xffffffff
+
+       414c2:	d2c6      	bcs.n	41452 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x22a>
+
+       414c4:	42ba      	cmp	r2, r7
+
+       414c6:	d2c4      	bcs.n	41452 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x22a>
+
+       414c8:	f1a8 0102 	sub.w	r1, r8, #2
+
+       414cc:	4432      	add	r2, r6
+
+       414ce:	e7c0      	b.n	41452 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x22a>
+
+       414d0:	45f0      	cmp	r8, lr
+
+       414d2:	d29c      	bcs.n	4140e <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x1e6>
+
+       414d4:	ebbe 0302 	subs.w	r3, lr, r2
+
+       414d8:	eb67 070c 	sbc.w	r7, r7, ip
+
+       414dc:	3801      	subs	r0, #1
+
+       414de:	46b9      	mov	r9, r7
+
+       414e0:	e795      	b.n	4140e <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x1e6>
+
+       414e2:	eba6 0808 	sub.w	r8, r6, r8
+
+       414e6:	4441      	add	r1, r8
+
+       414e8:	1eb8      	subs	r0, r7, #2
+
+       414ea:	fbb1 f8fe 	udiv	r8, r1, lr
+
+       414ee:	fb08 f70c 	mul.w	r7, r8, ip
+
+       414f2:	e7dc      	b.n	414ae <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x286>
+
+       414f4:	463b      	mov	r3, r7
+
+       414f6:	e77f      	b.n	413f8 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x1d0>
+
+       414f8:	4650      	mov	r0, sl
+
+       414fa:	e767      	b.n	413cc <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x1a4>
+
+       414fc:	4608      	mov	r0, r1
+
+       414fe:	e6fb      	b.n	412f8 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0xd0>
+
+       41500:	4434      	add	r4, r6
+
+       41502:	3802      	subs	r0, #2
+
+       41504:	e732      	b.n	4136c <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x144>
+
+       41506:	3f02      	subs	r7, #2
+
+       41508:	4432      	add	r2, r6
+
+       4150a:	e71b      	b.n	41344 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x11c>
+
+       4150c:	eba1 0108 	sub.w	r1, r1, r8
+
+       41510:	4638      	mov	r0, r7
+
+       41512:	fbb1 f8fe 	udiv	r8, r1, lr
+
+       41516:	fb08 f70c 	mul.w	r7, r8, ip
+
+       4151a:	e7c8      	b.n	414ae <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x286>
+
+       4151c:	4641      	mov	r1, r8
+
+       4151e:	e798      	b.n	41452 <<a href="./3372af3c02900bba27f6c78efc20d0b8.html">__udivmoddi4</a>+0x22a>
+
+    </pre>
+
+    
+    <pre><a href="./6fce04eff35e5f8056263359f1bfa032.html">atexit (12)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 704</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 6,052</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    6,052
+                    
+                    
+                </td>
+                <td class="col_size">760</td>
+                <td><a href="./3372af3c02900bba27f6c78efc20d0b8.html" class="icon-function">__udivmoddi4</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    5,292
+                    
+                    
+                </td>
+                <td class="col_size">48</td>
+                <td><a href="./1c7eb7a1a927e1255dd679ad9135aad5.html" class="icon-function">__aeabi_uldivmod</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    704
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                112 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    5,244
+                    
+                    
+                </td>
+                <td class="col_size">792</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/3rdparty/printf/src/printf/printf.c/ac6598d6032c1151c802f0c9a9979746.html" class="icon-function">print_integer</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    592
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                88 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    4,452
+                    
+                    
+                </td>
+                <td class="col_size">1,964</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/3rdparty/printf/src/printf/printf.c/6d7d630ec5529648e33ae989eebb2cb7.html" class="icon-function">_vsnprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    504
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,488
+                    
+                    
+                </td>
+                <td class="col_size">32</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/3rdparty/printf/src/printf/printf.c/529535ce0d5bfecabb7841bebeaf251c.html" class="icon-function">vsnprintf_</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    488
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,456
+                    
+                    
+                </td>
+                <td class="col_size">28</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/bsp/bspCharInputOutput/src/charInputOutput/bspIo.cpp/dc46df748e7b0eb8da1d6cff089ebb09.html" class="icon-function">snprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    472
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,428
+                    
+                    
+                </td>
+                <td class="col_size">76</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/bsw/cpp2ethernet/src/ip/to_str.cpp/0136b9da1328cb0b6fcc5bb356763d33.html" class="icon-function">ip::to_str(ip::IPAddress const&amp;, etl::span&lt;char, 4294967295u&gt; const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    440
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                96 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,352
+                    
+                    
+                </td>
+                <td class="col_size">252</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/bsw/cpp2someip/src/SdMessageBuilder.cpp/a324195bf50a897c30420617d51165e2.html" class="icon-function">someip::(anonymous namespace)::associateEndpointOption(someip::internal::Message&amp;, someip::(anonymous namespace)::MessageEndpointOptionType, unsigned short, ip::IPAddress const&amp;, unsigned short, unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                    
+                    344
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                80 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,100
+                    
+                    
+                </td>
+                <td class="col_size">396</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/bsw/cpp2someip/src/SdMessageBuilder.cpp/ae88273672d19398a7e4c1dbb0a06a26.html" class="icon-function">someip::SdMessageBuilder::addSubscribe(unsigned short, unsigned short, unsigned short, unsigned char, unsigned long, ip::IPAddress const&amp;, unsigned short, unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>10</th>
+                <td class="col_size">
+                    
+                    264
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,704
+                    
+                    
+                </td>
+                <td class="col_size">104</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/bsw/cpp2someip/src/ServiceAnnouncer.cpp/a1356337080ef7d269dddc7e8b50f884.html" class="icon-function">someip::ServiceAnnouncer::addSubscribe(someip::ServiceDescription&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>11</th>
+                <td class="col_size">
+                    
+                    216
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,600
+                    
+                    
+                </td>
+                <td class="col_size">180</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/bsw/cpp2someip/src/ServiceAnnouncer.cpp/6817f402106859955f469ef05d56a49a.html" class="icon-function">someip::ServiceAnnouncer::executeTask(someip::ServiceAnnouncerTask const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>12</th>
+                <td class="col_size">
+                    
+                    176
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,420
+                    
+                    
+                </td>
+                <td class="col_size">1,016</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/bsw/cpp2someip/src/ServiceAnnouncer.cpp/ad9908f725a70f9ffd16d6c06c22a86d.html" class="icon-function">someip::ServiceAnnouncer::checkPendingTasks(unsigned long long)</a></td>
+            </tr>
+        
+            <tr>
+                <th>13</th>
+                <td class="col_size">
+                    
+                    104
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    404
+                    
+                    
+                </td>
+                <td class="col_size">256</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/bsw/cpp2someip/src/ServiceAnnouncer.cpp/8029cfa3d951ccc3d6f2113cceb0ec61.html" class="icon-function">someip::ServiceAnnouncer::enqueueTxMessage(someip::ServiceAnnouncerTask const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>14</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                96 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">148</td>
+                <td><a href="../../home/runner/work/openbsw/openbsw/libs/bsw/cpp2someip/src/ServiceAnnouncer.cpp/7ae425b35fa46802a6bee6c3e77f697b.html" class="icon-function">someip::ServiceAnnouncer::sendSubscribeAckMulticast(unsigned short, unsigned short, unsigned short, unsigned char, unsigned short, unsigned long, ip::IPAddress const&amp;, unsigned short, ip::IPAddress const&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>
